@@ -1,0 +1,367 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+/* Header containing buttons for selections  */
+
+.Header {
+    flex: 1.2;
+    display:flex;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: #109b9d;
+}
+
+.Header .body {
+    height: 100%;
+    width: 55%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .title {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title .page_title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    height: 45px;
+    width: 45px;
+    margin-right: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.title  .header_buttons {
+    flex: 1;
+}
+
+.title .header_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.donate_button {
+    height: 35px;
+    width: 25%;
+    padding-bottom: 2px;
+    background-color: #ffffff;
+    color: #9900ff;
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5%;
+    font-size: larger; 
+    
+}
+
+.body .selections {
+    flex: 1;
+    display: flex;
+}
+
+.selections .type_of_pet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.type_of_pet .upper_box {
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.type_of_pet .lower_box {
+    flex: 1;
+    display: flex;
+    align-items:start;
+}
+
+.lower_box img {
+    height: 25px;
+    width: 25px;
+}
+
+select {
+    width: 70%;
+    font-size: x-large;
+}
+
+.selections .city {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.city .upper_box {
+    flex: 1;
+    color: white;
+    display:flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.city .lower_box {
+    flex: 1;
+    display: flex;
+    align-items: start;
+}
+
+#city_box {
+    width: 70%;
+    height: 30px;
+}
+
+.lower_box img {
+    height: 25px;
+    width: 25px;
+}
+
+.selections .find_friend {
+    flex: 1;
+    padding-top: 29px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#find_friend {
+    height: 34px;
+    width: 90%;
+    background-color: #9900ff;
+    color: white;
+    font-size: large;
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* main content body containing animals */
+
+.main_body {
+    flex: 3;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.main_body .main_box {
+    height: 100%;
+    width: 55%;
+    padding-top: 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Box 1 containing Cat Pepper */
+
+.main_box .box1 {
+    flex: 1;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    display: flex;
+}
+
+.box1 .col-1 {
+    height: 100%;
+    width: 20%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.col-1 img {
+    height: 135px;
+    width: 130px;
+}
+
+.box1 .col-2 {
+    height: 100%;
+    width: 60%;
+    gap: 10px;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.col-2 h2 {
+    font-size: x-large;
+}
+
+.box1 .col-3 {
+    height: 100%;
+    width: 30%;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.col-3 button {
+    height: 35px;
+    width: 90%;
+    margin: 10px;
+    background-color: #15cfd1;
+    color: white;
+    font-size: medium;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* Box 2 containing dog Bruce */
+
+.main_box .box2 {
+    flex: 1;
+    background-color: #dddddd;
+    display: flex;
+    border-radius: 10px
+}
+
+.box2 .col-1 {
+    height: 100%;
+    width: 20%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.box2 .col-1 img {
+    height: 135px;
+    width: 130px;
+}
+
+.box2 .col-2 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.box2 .col-2 h2 {
+    font-size: x-large;
+}
+
+.box2 .col-3 {
+    height: 100%;
+    width: 30%;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.box2 .col-3 button {
+    height: 35px;
+    width: 90%;
+    margin-top: 10px;
+    background-color: #15cfd1;
+    color: white;
+    font-size: medium;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* Box 3 containing dog Oscar */
+
+.main_box .box3 {
+    flex: 1;
+    background-color: #eeeeee;
+    display: flex;
+    border-radius: 10px
+}
+
+.box3 .col-1 {
+    height: 100%;
+    width: 20%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.box3 .col-1 img {
+    height: 135px;
+    width: 130px;
+}
+
+.box3 .col-2 {
+    height: 100%;
+    width: 60%;
+    gap: 10px;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.box3 .col-2 h2 {
+    font-size: x-large;
+}
+
+.box3 .col-3 {
+    height: 100%;
+    width: 30%;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.box3 .col-3 button {
+    height: 35px;
+    width: 90%;
+    margin: 10px;
+    background-color: #15cfd1;
+    color: white;
+    font-size: medium;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.footer {
+    flex: .15;
+    border: 2px solid black;
+    background-color: #c1c1c1;
+}

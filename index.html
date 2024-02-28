@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Pet Shelter</title>
+</head>
+<body>
+    <!-- Header for the page containing all buttons, selections -->
+
+        <div class="Header">
+        <div class="body">
+            <div class="title">
+                <div class="page_title">
+                    <img src="images/assets/heart-light.png" alt="Heart">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <div class="header_buttons">
+                    <a href="#">Find a Pet</a>
+                    <a href="#">About</a>
+                    <button onclick="remove(this)" id="btnDonate" class="donate_button"><strong>Donate</strong></button>
+                </div>
+            </div>
+            <div class="selections">
+                <div class="type_of_pet">
+                    <div class="upper_box">
+                        <h3>I'm looking for a...</h3>
+                    </div>
+                    <div class="lower_box">
+                        <img src="images/assets/paw-light.png" alt="Paw">
+                        <select onchange="chooseAnimal(this)" name="Pet_Select" id="petSelect">
+                            <option value="Any_Pet">Any Pet</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Dog">Dog</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="city">
+                    <div class="upper_box">
+                        <h3>in or near...</h3>
+                    </div>
+                    <div class="lower_box">
+                        <img src="images/assets/pin-light.png" alt="Pin">
+                        <input type="text" name="city_or_Zip" placeholder="City or Zip code" id="city_box">
+                    </div>
+                </div>
+                <div class="find_friend">
+                    <button id="find_friend">Find my new best friend</button>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+        <!-- Main content of page containing descriptions of animals -->
+
+        <div class="main_body">
+            <div class="main_box">
+                <div class="box1">
+                        <div class="col-1">
+                            <img src="images/assets/pepper.jpg" alt="Pepper the cat">
+                        </div>
+                        <div class="col-2">
+                            <h2>Pepper</h2>
+                            <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                        </div>
+                        <div class="col-3">
+                            <p id="petButton1">0 Petting(s)</p>
+                            <button onclick="addOne()" class="pet_button1">Pet Pepper</button>
+                        </div>
+                </div>
+                <div class="box2">
+                    <div class="col-1">
+                        <img src="images/assets/bruce.jpg" alt="Bruce the dog">
+                    </div>
+                    <div class="col-2">
+                        <h2>Bruce</h2>
+                        <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                    </div>
+                    <div class="col-3">
+                        <p id="petButton2">0 Petting(s)</p>
+                        <button onclick="addOne2()" class="pet_button2">Pet Bruce</button>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="col-1">
+                        <img src="images/assets/oscar.jpg" alt="Oscar the dog">
+                    </div>
+                    <div class="col-2">
+                        <h2>Oscar</h2>
+                        <p>Oscar is a bright, energetic, and friendly. He is looking for a good home.</p>
+                    </div>
+                    <div class="col-3">
+                        <p id="petButton3">0 Petting(s)</p>
+                        <button onclick="addOne3()" class="pet_button3">Pet Oscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Footer for page -->
+
+        <div class="footer">
+
+        </div>
+</body>
+</html>
